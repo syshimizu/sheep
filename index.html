@@ -6,13 +6,42 @@
 -->
 <html>
 	<head>
-		<title>Sheep. A Collection by SY</title>
+		<title>Sheep: A Collection by SY</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+        <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+        
+        <script type="text/javascript" language = "JavaScript">
+        
+        year = ["2014", "2015", "2016"]
+        month = ["01", "02", "03"]
+            
+        function RandomImage(){
+            //retrieving random image file
+            var images = ['images/fulls/01.jpg', 'images/fulls/02.jpg', 'images/fulls/03.jpg'];
+            var image = images[Math.floor(Math.random()*images.length)];
+
+            //replacing src and href with random image file
+            var htmlImage1a = document.getElementById("image1a");
+            var htmlImage1b = document.getElementById("image1b");
+            htmlImage1a.src = image;
+            htmlImage1b.href = htmlImage1a.src;
+
+            //renaming title of image
+            var name1 = document.getElementById("name1");
+            name1.innerHTML = image;
+            
+        }
+
+        
+        
+        </script>
+
+
 	</head>
 	<body class="is-preload">
+        
 
 		<!-- Wrapper -->
 			<div id="wrapper">
@@ -29,10 +58,12 @@
 
 				<!-- Main -->
 					<div id="main">
+                        
 						<article class="thumb">
-							<a href="images/fulls/01.jpg" class="image"><img src="images/thumbs/01.jpg" alt="" /></a>
-							<h2>Magna feugiat lorem</h2>
-							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
+							<a href="images/thumbs/02.jpg" class="image" id = "image1b"><img src="images/thumbs/01.jpg" alt="" id="image1a"/></a>
+							<h2 id = "name1">Magna feugiat lorem</h2>
+                            <p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
+                          
 						</article>
 						<article class="thumb">
 							<a href="images/fulls/02.jpg" class="image"><img src="images/thumbs/02.jpg" alt="" /></a>
@@ -88,7 +119,11 @@
 							<a href="images/fulls/12.jpg" class="image"><img src="images/thumbs/12.jpg" alt="" /></a>
 							<h2>Vehicula id nulla dignissim</h2>
 							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
-						</article>
+                        </article>
+                        <script>
+                            RandomImage()
+                            
+                        </script>
 					</div>
 
 				<!-- Footer -->
@@ -138,7 +173,7 @@
 							</div>
 						</div>
 					</footer>
-
+                   
 			</div>
 
 		<!-- Scripts -->
@@ -147,7 +182,8 @@
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+            <script src="assets/js/main.js"></script>
+           
 
 	</body>
 </html>
