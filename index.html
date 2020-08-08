@@ -6,32 +6,159 @@
 -->
 <html>
 	<head>
-		<title>Sheep: A Collection by SY</title>
+        <title>Sheep: A Collection by SY</title>
+        
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
         <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
         
-        <script type="text/javascript" language = "JavaScript">
         
-        year = ["2014", "2015", "2016"]
-        month = ["01", "02", "03"]
-            
+        <script type="text/javascript" src="sheep_list.js"></script> 
+        <script type="text/javascript" language = "JavaScript">
+
         function RandomImage(){
+
+
             //retrieving random image file
-            var images = ['images/fulls/01.jpg', 'images/fulls/02.jpg', 'images/fulls/03.jpg'];
-            var image = images[Math.floor(Math.random()*images.length)];
+            var images = entries;
+
+            var image1 = images[Math.floor(Math.random()*images.length)];
+            var image2 = images[Math.floor(Math.random()*images.length)];
+            var image3 = images[Math.floor(Math.random()*images.length)];
+            var image4 = images[Math.floor(Math.random()*images.length)];
+            var image5 = images[Math.floor(Math.random()*images.length)];
+            var image6 = images[Math.floor(Math.random()*images.length)];
+            var image7 = images[Math.floor(Math.random()*images.length)];
+            var image8 = images[Math.floor(Math.random()*images.length)];
+            var image9 = images[Math.floor(Math.random()*images.length)];
+            var image10 = images[Math.floor(Math.random()*images.length)];
+            var image11 = images[Math.floor(Math.random()*images.length)];
+            var image12 = images[Math.floor(Math.random()*images.length)];
+
 
             //replacing src and href with random image file
             var htmlImage1a = document.getElementById("image1a");
             var htmlImage1b = document.getElementById("image1b");
-            htmlImage1a.src = image;
+            htmlImage1a.src = "Sheep/" + image1;
             htmlImage1b.href = htmlImage1a.src;
+
+            var htmlImage2a = document.getElementById("image2a");
+            var htmlImage2b = document.getElementById("image2b");
+            htmlImage2a.src = "Sheep/" + image2;
+            htmlImage2b.href = htmlImage2a.src;
+
+            var htmlImage3a = document.getElementById("image3a");
+            var htmlImage3b = document.getElementById("image3b");
+            htmlImage3a.src = "Sheep/" + image3;
+            htmlImage3b.href = htmlImage3a.src;
+
+            var htmlImage4a = document.getElementById("image4a");
+            var htmlImage4b = document.getElementById("image4b");
+            htmlImage4a.src = "Sheep/" + image4;
+            htmlImage4b.href = htmlImage4a.src;
+
+            var htmlImage5a = document.getElementById("image5a");
+            var htmlImage5b = document.getElementById("image5b");
+            htmlImage5a.src = "Sheep/" + image5;
+            htmlImage5b.href = htmlImage5a.src;
+
+            var htmlImage6a = document.getElementById("image6a");
+            var htmlImage6b = document.getElementById("image6b");
+            htmlImage6a.src = "Sheep/" + image6;
+            htmlImage6b.href = htmlImage6a.src;
+
+            var htmlImage7a = document.getElementById("image7a");
+            var htmlImage7b = document.getElementById("image7b");
+            htmlImage7a.src = "Sheep/" + image7;
+            htmlImage7b.href = htmlImage7a.src;
+
+            var htmlImage8a = document.getElementById("image8a");
+            var htmlImage8b = document.getElementById("image8b");
+            htmlImage8a.src = "Sheep/" + image8;
+            htmlImage8b.href = htmlImage8a.src;
+
+            var htmlImage9a = document.getElementById("image9a");
+            var htmlImage9b = document.getElementById("image9b");
+            htmlImage9a.src = "Sheep/" + image9;
+            htmlImage9b.href = htmlImage9a.src;
+
+            var htmlImage10a = document.getElementById("image10a");
+            var htmlImage10b = document.getElementById("image10b");
+            htmlImage10a.src = "Sheep/" + image10;
+            htmlImage10b.href = htmlImage10a.src;
+
+            var htmlImage11a = document.getElementById("image11a");
+            var htmlImage11b = document.getElementById("image11b");
+            htmlImage11a.src = "Sheep/" + image11;
+            htmlImage11b.href = htmlImage11a.src;
+
+            var htmlImage12a = document.getElementById("image12a");
+            var htmlImage12b = document.getElementById("image12b");
+            htmlImage12a.src = "Sheep/" + image12;
+            htmlImage12b.href = htmlImage12a.src;
 
             //renaming title of image
             var name1 = document.getElementById("name1");
-            name1.innerHTML = image;
-            
+            var end = image1.length - 11;
+            image1 = image1.replace(/_/g," ");
+            name1.innerHTML = image1.substring(5,end);
+
+            var name2 = document.getElementById("name2");
+            var end = image2.length - 11;
+            image2 = image2.replace(/_/g," ");
+            name2.innerHTML = image2.substring(5,end);
+
+            var name3 = document.getElementById("name3");
+            var end = image3.length - 11;
+            image3 = image3.replace(/_/g," ");
+            name3.innerHTML = image3.substring(5,end);
+
+            var name4 = document.getElementById("name4");
+            var end = image4.length - 11;
+            image4 = image4.replace(/_/g," ");
+            name4.innerHTML = image4.substring(5,end);
+
+            var name5 = document.getElementById("name5");
+            var end = image5.length - 11;
+            image5 = image5.replace(/_/g," ");
+            name5.innerHTML = image5.substring(5,end);
+
+            var name6 = document.getElementById("name6");
+            var end = image6.length - 11;
+            image6 = image6.replace(/_/g," ");
+            name6.innerHTML = image6.substring(5,end);
+
+            var name7 = document.getElementById("name7");
+            var end = image7.length - 11;
+            image7 = image7.replace(/_/g," ");
+            name7.innerHTML = image7.substring(5,end);
+
+            var name8 = document.getElementById("name8");
+            var end = image8.length - 11;
+            image8 = image8.replace(/_/g," ");
+            name8.innerHTML = image8.substring(5,end);
+
+            var name9 = document.getElementById("name9");
+            var end = image9.length - 11;
+            image9 = image9.replace(/_/g," ");
+            name9.innerHTML = image9.substring(5,end);
+
+            var name10 = document.getElementById("name10");
+            var end = image10.length - 11;
+            image10 = image10.replace(/_/g," ");
+            name10.innerHTML = image10.substring(5,end);
+
+            var name11 = document.getElementById("name11");
+            var end = image11.length - 11;
+            image11 = image11.replace(/_/g," ");
+            name11.innerHTML = image11.substring(5,end);
+
+            var name12 = document.getElementById("name12");
+            var end = image12.length - 11;
+            image12 = image12.replace(/_/g," ");
+            name12.innerHTML = image12.substring(5,end);
+
         }
 
         
@@ -62,67 +189,68 @@
 						<article class="thumb">
 							<a href="images/thumbs/02.jpg" class="image" id = "image1b"><img src="images/thumbs/01.jpg" alt="" id="image1a"/></a>
 							<h2 id = "name1">Magna feugiat lorem</h2>
-                            <p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
+                            <p></p> <!-- option for text in pop-up image-->
                           
 						</article>
 						<article class="thumb">
-							<a href="images/fulls/02.jpg" class="image"><img src="images/thumbs/02.jpg" alt="" /></a>
-							<h2>Nisl adipiscing</h2>
-							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
+							<a href="images/fulls/02.jpg" class="image" id = "image2b"><img src="images/thumbs/02.jpg" alt="" id="image2a"/></a>
+							<h2 id = "name2">Nisl adipiscing</h2>
+							<p></p>
 						</article>
 						<article class="thumb">
-							<a href="images/fulls/03.jpg" class="image"><img src="images/thumbs/03.jpg" alt="" /></a>
-							<h2>Tempus aliquam veroeros</h2>
-							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
+							<a href="images/fulls/03.jpg" class="image" id = "image3b"><img src="images/thumbs/03.jpg" alt="" id = "image3a"/></a>
+							<h2 id = "name3">Tempus aliquam veroeros</h2>
+							<p></p>
 						</article>
 						<article class="thumb">
-							<a href="images/fulls/04.jpg" class="image"><img src="images/thumbs/04.jpg" alt="" /></a>
-							<h2>Aliquam ipsum sed dolore</h2>
-							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
+							<a href="images/fulls/04.jpg" class="image" id = "image4b"><img src="images/thumbs/04.jpg" alt="" id = "image4a"/></a>
+							<h2 id = "name4">Aliquam ipsum sed dolore</h2>
+							<p></p>
 						</article>
 						<article class="thumb">
-							<a href="images/fulls/05.jpg" class="image"><img src="images/thumbs/05.jpg" alt="" /></a>
-							<h2>Cursis aliquam nisl</h2>
-							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
+							<a href="images/fulls/05.jpg" class="image" id = "image5b"><img src="images/thumbs/05.jpg" alt="" id = "image5a"/></a>
+							<h2 id = "name5">Cursis aliquam nisl</h2>
+							<p></p>
 						</article>
 						<article class="thumb">
-							<a href="images/fulls/06.jpg" class="image"><img src="images/thumbs/06.jpg" alt="" /></a>
-							<h2>Sed consequat phasellus</h2>
-							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
+							<a href="images/fulls/06.jpg" class="image" id = "image6b"><img src="images/thumbs/06.jpg" alt="" id = "image6a"/></a>
+							<h2 id = "name6">Sed consequat phasellus</h2>
+							<p></p>
 						</article>
 						<article class="thumb">
-							<a href="images/fulls/07.jpg" class="image"><img src="images/thumbs/07.jpg" alt="" /></a>
-							<h2>Mauris id tellus arcu</h2>
-							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
+							<a href="images/fulls/07.jpg" class="image" id = "image7b"><img src="images/thumbs/07.jpg" alt="" id = "image7a"/></a>
+							<h2 id = "name7"> Mauris id tellus arcu</h2>
+							<p></p>
 						</article>
 						<article class="thumb">
-							<a href="images/fulls/08.jpg" class="image"><img src="images/thumbs/08.jpg" alt="" /></a>
-							<h2>Nunc vehicula id nulla</h2>
-							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
+							<a href="images/fulls/08.jpg" class="image" id = "image8b"><img src="images/thumbs/08.jpg" alt="" id = "image8a"/></a>
+							<h2 id = "name8">Nunc vehicula id nulla</h2>
+							<p></p>
 						</article>
 						<article class="thumb">
-							<a href="images/fulls/09.jpg" class="image"><img src="images/thumbs/09.jpg" alt="" /></a>
-							<h2>Neque et faucibus viverra</h2>
-							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
+							<a href="images/fulls/09.jpg" class="image" id = "image9b"><img src="images/thumbs/09.jpg" alt="" id = "image9a"/></a>
+							<h2 id = "name9">Neque et faucibus viverra</h2>
+							<p></p>
 						</article>
 						<article class="thumb">
-							<a href="images/fulls/10.jpg" class="image"><img src="images/thumbs/10.jpg" alt="" /></a>
-							<h2>Mattis ante fermentum</h2>
-							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
+							<a href="images/fulls/10.jpg" class="image" id = "image10b"><img src="images/thumbs/10.jpg" alt="" id = "image10a"/></a>
+							<h2 id = "name10">Mattis ante fermentum</h2>
+							<p></p>
 						</article>
 						<article class="thumb">
-							<a href="images/fulls/11.jpg" class="image"><img src="images/thumbs/11.jpg" alt="" /></a>
-							<h2>Sed ac elementum arcu</h2>
-							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
+							<a href="images/fulls/11.jpg" class="image" id = "image11b"><img src="images/thumbs/11.jpg" alt="" id = "image11a"/></a>
+							<h2 id = "name11">Sed ac elementum arcu</h2>
+							<p></p>
 						</article>
 						<article class="thumb">
-							<a href="images/fulls/12.jpg" class="image"><img src="images/thumbs/12.jpg" alt="" /></a>
-							<h2>Vehicula id nulla dignissim</h2>
-							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
+							<a href="images/fulls/12.jpg" class="image" id = "image12b"><img src="images/thumbs/12.jpg" alt="" id = "image12a"/></a>
+							<h2 id = "name12">Vehicula id nulla dignissim</h2>
+							<p></p>
                         </article>
                         <script>
+
                             RandomImage()
-                            
+                
                         </script>
 					</div>
 
@@ -131,8 +259,15 @@
 						<div class="inner split">
 							<div>
 								<section>
-									<h2>Magna feugiat sed adipiscing</h2>
-									<p>Nulla consequat, ex ut suscipit rutrum, mi dolor tincidunt erat, et scelerisque turpis ipsum eget quis orci mattis aliquet. Maecenas fringilla et ante at lorem et ipsum. Dolor nulla eu bibendum sapien. Donec non pharetra dui. Nulla consequat, ex ut suscipit rutrum, mi dolor tincidunt erat, et scelerisque turpis ipsum.</p>
+									<h2 style="color:#ffffff;">What is Sheep?</h2>
+									<p>Sheep is a collection of drawings by various folks, prompted with the (random) request: “draw me a sheep.” 
+                                        Inspired by Antoine de Saint-Exupéry’s <i>The Little Prince</i>, the collection began from a curiosity of whether anyone would understand 
+                                        the reference to this work and evolved into an interest in idiosyncratic drawings of sheep and a delight in collecting artifacts of people’s time. 
+                                        <br>
+                                        <br>
+                                        Current collection cycles through 100 drawings from July 2014 to May 2020.
+
+                                        </p>
 								</section>
 								<!-- <section>
 									<h2>Follow me on ...</h2>
@@ -144,14 +279,15 @@
 										<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
 										<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
 									</ul>
-								</section> 
+                                </section> 
+                                -->
 								<p class="copyright">
-									&copy; Unttled. Design: <a href="http://html5up.net">HTML5 UP</a>.
-								</p> -->
+									&copy; Soon-Young Shimizu. Design: <a href="http://html5up.net">HTML5 UP</a>.
+								</p> 
 							</div>
 							<div>
 								<section>
-									<h2>Get in touch</h2>
+									<h2>Send a message</h2>
 									<form method="post" action="#">
 										<div class="fields">
 											<div class="field half">
