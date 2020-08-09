@@ -18,23 +18,36 @@
         <script type="text/javascript" language = "JavaScript">
 
         function RandomImage(){
-
-
-            //retrieving random image file
+            // acquiring list of file names 
             var images = entries;
 
-            var image1 = images[Math.floor(Math.random()*images.length)];
-            var image2 = images[Math.floor(Math.random()*images.length)];
-            var image3 = images[Math.floor(Math.random()*images.length)];
-            var image4 = images[Math.floor(Math.random()*images.length)];
-            var image5 = images[Math.floor(Math.random()*images.length)];
-            var image6 = images[Math.floor(Math.random()*images.length)];
-            var image7 = images[Math.floor(Math.random()*images.length)];
-            var image8 = images[Math.floor(Math.random()*images.length)];
-            var image9 = images[Math.floor(Math.random()*images.length)];
-            var image10 = images[Math.floor(Math.random()*images.length)];
-            var image11 = images[Math.floor(Math.random()*images.length)];
-            var image12 = images[Math.floor(Math.random()*images.length)];
+            //generating list of 12 unique numbers
+            var list = [];
+            
+            for (var i = 0; i < 12; i++){
+                x = Math.floor(Math.random()*images.length);
+                
+                if (list.indexOf(x) == -1){
+                    list.push(x);
+                }else{
+                    i = i - 1; 
+                }
+            }
+
+            //retrieving random image file
+
+            var image1 = images[list[0]];
+            var image2 = images[list[1]];
+            var image3 = images[list[2]];
+            var image4 = images[list[3]];
+            var image5 = images[list[4]];
+            var image6 = images[list[5]];
+            var image7 = images[list[6]];
+            var image8 = images[list[7]];
+            var image9 = images[list[8]];
+            var image10 = images[list[9]];
+            var image11 = images[list[10]];
+            var image12 = images[list[11]];
 
 
             //replacing src and href with random image file
