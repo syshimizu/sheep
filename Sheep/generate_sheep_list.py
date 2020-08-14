@@ -29,5 +29,5 @@ currentDT = datetime.datetime.now()
 date = currentDT.strftime("_%Y_%m_%d")
 
 # Exporting data frame as a .csv with today's date appended. 
-export = df.to_csv(r'./Master_data'+ date +'.csv', index = None, header=True)
+export = df.to_csv(r'./sheep_list'+ date +'.csv', index = None, header=True)
 print('Merging complete')
